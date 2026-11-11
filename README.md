@@ -88,13 +88,17 @@
 *   Изменения запушены. TeamCity автоматически обнаружил новую ветку и запустил сборку `#7`. Так как ветка не `master`, выполнился шаг `mvn clean test`. Сборка зеленая, Tests passed: 6.
 
 *Скриншот сборки ветки feature/add_reply:*
-![Build Feature Branch](screenshots/build_feature_branch.png)
+
+![Alt text](images/12.png)
 
 **9. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через Merge. Убедитесь, что нет собранного артефакта в сборке по ветке `master`.**
 *   Ветка слита в `master`. Автоматически запустилась сборка `#8`. Проверка вкладки `Artifacts` показала сообщение `No user-defined artifacts in this build`.
 
 *Скриншот сборки без артефактов:*
-![Build No Artifacts](screenshots/build_no_artifacts.png)
+
+![Alt text](images/13.png)
+
+![Alt text](images/14.png)
 
 **10. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.**
 *   В настройках `General Settings` -> `Artifact Paths` добавлено правило `**/target/*.jar => *.jar`. Запущена повторная сборка `master` (`#9`). На вкладке `Artifacts` успешно появились собранные JAR-файлы (включая shaded-версию от плагина maven-shade).
