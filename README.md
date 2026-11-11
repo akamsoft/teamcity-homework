@@ -1,7 +1,3 @@
-Ниже представлен полный и подробный шаблон для файла `README.md`, который можно использовать как ответ на домашнее задание. В нём последовательно разобраны все пункты задания, добавлены пояснения и места для ваших скриншотов (которые вы приложили в чате). 
-
-Вам нужно будет только скопировать этот текст, вставить его в файл `README.md` в вашем новом репозитории (например, `teamcity-homework`), при необходимости загрузить скриншоты в папку `screenshots` и поправить пути к ним.
-
 ---
 
 # Домашнее задание к занятию 11 «Teamcity»
@@ -28,9 +24,18 @@
 *   Создана ВМ `nexus-01` (2 vCPU, 4 GB RAM). Установка Nexus 3.14 выполнена через Ansible playbook. В процессе установки playbook был адаптирован под ОС Ubuntu (заменен пакет JDK и добавлена установка `acl`). Nexus успешно запущен как служба systemd.
 
 *Скриншоты виртуальных машин Yandex Cloud:*
-![ВМ в Yandex Cloud](screenshots/yandex_vm.png)
-![Ansible Playbook](screenshots/ansible.png)
-![Nexus работает](screenshots/nexus_ui.png)
+
+![Alt text](images/VM.png)
+
+![Alt text](images/1.png)
+
+![Alt text](images/2.png)
+
+![Alt text](images/3.png)
+
+![Alt text](images/4.png)
+
+![Alt text](images/5.png)
 
 ---
 
