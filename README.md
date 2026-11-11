@@ -68,19 +68,18 @@
 **5. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.**
 *   Сборка по `master` прошла успешно. В Nexus (репозиторий `maven-releases`, путь `org/netology/plaindoll/0.0.2/`) появились файлы `.jar` и `.pom`.
 
+*Скриншоты артефакта в Nexus и успешной сборки:*
+
 ![Alt text](images/9.png)
 
 ![Alt text](images/10.png)
-
-*Скриншоты артефакта в Nexus и успешной сборки:*
-![Nexus Artifact](screenshots/nexus_artifact.png)
-![TeamCity Build Success](screenshots/build_success_deploy.png)
 
 **6. Мигрируйте build configuration в репозиторий.**
 *   В настройках проекта включена синхронизация с VCS (Versioned Settings). В качестве формата выбран Kotlin DSL. Настройки успешно сгенерированы и сохранены в директорию `.teamcity` в корне репозитория.
 
 *Скриншот структуры репозитория:*
-![GitHub Repo](screenshots/github_repo.png)
+
+![Alt text](images/11.png)
 
 **7. Создайте отдельную ветку `feature/add_reply` в репозитории. Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter. Дополните тест для нового метода на поиск слова hunter в новой реплике.**
 *   В ветке `feature/add_reply` в класс `Welcomer` добавлен метод `reply()`, возвращающий строку `"Hello, hunter!"`. В `WelcomerTest` добавлен соответствующий тест `testReplyContainsHunter()`, проверяющий наличие подстроки `hunter` через `assertTrue`.
