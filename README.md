@@ -42,6 +42,10 @@
 **1. Создайте новый проект в teamcity на основе fork. Сделайте autodetect конфигурации. Сохраните необходимые шаги, запустите первую сборку master.**
 *   Проект `Example Teamcity` создан на основе URL форка. Автодетект успешно обнаружил `pom.xml` и сгенерировал шаги сборки. Первая сборка `master` прошла успешно (Tests passed: 5).
 
+![Alt text](images/0.png)
+
+![Alt text](images/6.png)
+
 **2. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.**
 *   В настройках `Build Steps` настроены два шага Maven:
     *   Шаг 1: `clean test`. Условие выполнения (Execution conditions): `teamcity.build.branch does not match master`.
