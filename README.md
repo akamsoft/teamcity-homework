@@ -52,19 +52,25 @@
     *   Шаг 2: `clean deploy`. Условие выполнения: `teamcity.build.branch matches master`.
 
 *Скриншоты настроек сборки:*
-![Условия сборки](screenshots/build_steps.png)
+
+![Alt text](images/7.png)
 
 **3. Для deploy будет необходимо загрузить `settings.xml` в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.**
 *   Файл `settings.xml` с логином и паролем администратора Nexus загружен в раздел `Maven Settings` проекта под именем `nexus-settings`. В шаге сборки `clean deploy` выбрано использование этих настроек.
 
 *Скриншот загруженного settings.xml:*
-![Maven Settings](screenshots/maven_settings.png)
+
+![Alt text](images/8.png)
 
 **4. В `pom.xml` необходимо поменять ссылки на репозиторий и nexus.**
-*   В `pom.xml` добавлена секция `<distributionManagement>` с указанием URL созданного в Nexus репозитория `maven-releases` (`http://51.250.79.45:8081/repository/maven-releases/`). ID репозитория (`nexus-releases`) совпадает с ID в `settings.xml`.
+*   В `pom.xml` добавлена секция `<distributionManagement>` с указанием URL созданного в Nexus репозитория `maven-releases` (`http://51.250.79.45:8081/repository/maven-releases/`). ID репозитория (`nexus`) совпадает с ID в `settings.xml`.
 
 **5. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.**
 *   Сборка по `master` прошла успешно. В Nexus (репозиторий `maven-releases`, путь `org/netology/plaindoll/0.0.2/`) появились файлы `.jar` и `.pom`.
+
+![Alt text](images/9.png)
+
+![Alt text](images/10.png)
 
 *Скриншоты артефакта в Nexus и успешной сборки:*
 ![Nexus Artifact](screenshots/nexus_artifact.png)
