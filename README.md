@@ -23,6 +23,8 @@
 
 ![Alt text](images/VM.png)
 
+*Скриншоты установки Nexus через Ansible playbook*
+
 ![Alt text](images/1.png)
 
 ![Alt text](images/2.png)
