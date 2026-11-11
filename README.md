@@ -1,11 +1,7 @@
----
-
 # Домашнее задание к занятию 11 «Teamcity»
 
 ## Ссылка на репозиторий с выполненным заданием
 *Основной репозиторий с кодом (форк):* [https://github.com/akamsoft/example-teamcity](https://github.com/akamsoft/example-teamcity)
-
----
 
 ## Выполнение задания
 
